@@ -1,0 +1,331 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>B.Sc. in ICT — Mahidol University | Code Your Future. Broaden Your World.</title>
+<meta name="description" content="An English-taught computing degree in Thailand with eight specialisations and project-based learning. For prospective students in Germany. Faculty of ICT, Mahidol University.">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="grain" aria-hidden="true"></div>
+<div class="progress" id="progress" aria-hidden="true"></div>
+
+<!-- ================================================================== nav -->
+<header class="nav" id="nav">
+  <div class="wrap nav-inner">
+    <a class="brand" href="#top" aria-label="Faculty of ICT, Mahidol University">
+      <svg viewBox="0 0 30 30" fill="none" aria-hidden="true">
+        <g stroke="#2BA79F" stroke-width="1.3">
+          <polygon points="15,1.6 21.5,5.3 21.5,12.7 15,16.4 8.5,12.7 8.5,5.3"/>
+          <polygon points="8.6,9.9 15.1,13.6 15.1,21 8.6,24.7 2.1,21 2.1,13.6"/>
+          <polygon points="21.4,9.9 27.9,13.6 27.9,21 21.4,24.7 14.9,21 14.9,13.6"/>
+        </g>
+      </svg>
+      <span class="brand-txt">
+        <b>ICT Mahidol</b>
+        <span>Faculty of ICT</span>
+      </span>
+    </a>
+    <nav class="nav-links" aria-label="Sections">
+      <a href="#tracks">Eight tracks</a>
+      <a href="#learn">How you learn</a>
+      <a href="#germany">Germany route</a>
+      <a href="#questions">Questions</a>
+    </nav>
+    <a class="btn btn-primary btn-sm" href="#apply">Apply for 2027 <span class="arw">↗</span></a>
+  </div>
+</header>
+
+<!-- ================================================================== hero -->
+<main id="top">
+<section class="hero">
+  <canvas id="globe" aria-hidden="true"></canvas>
+  <div class="hero-scrim" aria-hidden="true"></div>
+
+  <div class="wrap hero-inner">
+    <div class="hero-copy">
+      <p class="eyebrow mono rv">Für Studierende aus Deutschland</p>
+      <h1 class="rv d1">Code your future.<span class="l2">Broaden your world.</span></h1>
+      <p class="lede rv d2">Four years. Eight specialisations. One English-taught computing degree in
+        Thailand — built around projects, laboratories and a curriculum you can read before you
+        commit to anything.</p>
+      <div class="hero-actions rv d3">
+        <a class="btn btn-primary" href="#tracks">Find your track <span class="arw">↗</span></a>
+        <a class="btn btn-ghost" href="https://www.ict.mahidol.ac.th/en/programs/bachelor-of-science-in-ict/"
+           target="_blank" rel="noopener">Read the curriculum</a>
+      </div>
+      <p class="hero-note rv d4">International applications <b>1 Sep 2026 — 15 May 2027</b></p>
+    </div>
+  </div>
+
+  <div class="scroll-hint" aria-hidden="true">
+    <span>Scroll</span>
+    <i></i>
+  </div>
+</section>
+
+<!-- ================================================================== stats -->
+<section class="stats">
+  <div class="wrap">
+    <div class="stats-grid">
+      <div class="stat rv"><div class="n" data-count="8">8</div><div class="l">specialisation tracks</div><div class="s">Four core · four applied</div></div>
+      <div class="stat rv d1"><div class="n" data-count="129">129</div><div class="l">credits, minimum</div><div class="s">93 of them specialised</div></div>
+      <div class="stat rv d2"><div class="n" data-count="4">4</div><div class="l">years, full-time</div><div class="s">Two semesters a year</div></div>
+      <div class="stat rv d3"><div class="n"><small>#</small>345</div><div class="l">QS World Ranking 2027</div><div class="s">Mahidol University</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================================================================== tracks -->
+<section class="block tracks" id="tracks">
+  <div class="wrap">
+    <div class="section-head rv">
+      <p class="eyebrow mono">01 — Choose a direction</p>
+      <h2>Eight tracks. Pick the one that<br><em>sounds like you.</em></h2>
+      <p class="lede">Four core tracks and four applied tracks. Turn the badge, or choose from the list —
+        every track has a published description you can read in full.</p>
+    </div>
+
+    <div class="tracks-grid">
+      <div class="badge-stage rv">
+        <div class="badge-halo" aria-hidden="true"></div>
+        <canvas id="prism" aria-hidden="true"></canvas>
+      </div>
+
+      <div class="rv d1">
+        <div class="track-list" id="trackList" role="group" aria-label="Choose a specialisation track"></div>
+
+        <div class="track-detail" id="trackDetail" aria-live="polite">
+          <p class="mono kind" id="tdKind">Core track</p>
+          <h3 id="tdName">Computer Science</h3>
+          <p id="tdStudy"></p>
+          <p class="fit" id="tdFit"></p>
+          <a id="tdLink" href="https://www.ict.mahidol.ac.th/en/programs/bachelor-of-science-in-ict/"
+             target="_blank" rel="noopener">Read the official track description <span>↗</span></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================================================================== learn -->
+<section class="block learn" id="learn">
+  <div class="wrap">
+    <div class="section-head rv">
+      <p class="eyebrow mono">02 — How you learn</p>
+      <h2 class="tight">You will build things.<br>Then you will be <em>assessed on them.</em></h2>
+      <p class="lede">The programme runs on activity-based and project-based learning alongside the theory.
+        Core theory comes first, taught by instructors — then you apply it, in laboratories, on real
+        problems, with guidance.</p>
+    </div>
+
+    <div class="learn-grid">
+      <div class="learn-photo rv">
+        <img src="assets/lab.jpg" alt="The MU AI Center laboratory in the ICT building, Salaya campus" loading="lazy">
+        <span class="cap">MU AI Center · ICT Building · Salaya</span>
+      </div>
+      <div class="rv d1">
+        <p style="color:var(--muted); font-size:15.5px; line-height:1.7; margin:0 0 6px">
+          A few of the courses you would actually take:
+        </p>
+        <div class="course-chips">
+          <span class="chip"><b>ITCS201</b> Fundamentals of Programming</span>
+          <span class="chip"><b>ITCS209</b> Object-Oriented Programming</span>
+          <span class="chip"><b>ITCS231</b> Data Structures &amp; Algorithm Analysis</span>
+          <span class="chip"><b>ITCS241</b> Database Management Systems</span>
+          <span class="chip"><b>ITCS337</b> Human–Computer Interaction</span>
+          <span class="chip"><b>ITCS420</b> Computer Networks</span>
+          <span class="chip"><b>ITCS451</b> Artificial Intelligence</span>
+          <span class="chip"><b>ITCS461</b> Computer &amp; Communication Security</span>
+        </div>
+        <p style="color:var(--dim); font-size:13px; margin-top:26px; line-height:1.65">
+          Course codes and titles as published in the programme curriculum. The full semester-by-semester
+          plan, with prerequisites, is on the official programme page.
+        </p>
+        <a class="btn btn-ghost btn-sm" style="margin-top:22px"
+           href="https://www.ict.mahidol.ac.th/en/programs/bachelor-of-science-in-ict/"
+           target="_blank" rel="noopener">See the full study plan <span class="arw">↗</span></a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================================================================== germany -->
+<section class="block germany" id="germany">
+  <div class="wrap">
+    <div class="section-head rv">
+      <p class="eyebrow mono">03 — A route that leads home</p>
+      <h2>Germany is already on<br>the <em>destination list.</em></h2>
+      <p class="lede">The faculty advertises internship-abroad rounds every year. Germany appeared in
+        both the 2025 and the 2026 round — alongside Japan, Taiwan, South Korea, Malaysia, Australia and China.</p>
+    </div>
+
+    <div class="germany-card rv">
+      <div>
+        <div class="route">
+          <svg viewBox="0 0 520 240" role="img" aria-label="Map from Berlin to Bangkok, Thailand">
+            <defs>
+              <linearGradient id="rg" x1="0" y1="0" x2="1" y2="0">
+                <stop offset="0" stop-color="#D8BE7A"/>
+                <stop offset="1" stop-color="#2BA79F"/>
+              </linearGradient>
+            </defs>
+            <path class="worldmap" d="M206.8 225.5L207.7 231.4L205.7 231.4L206.0 234.6L198.7 256.7L194.1 258.5L190.3 256.8L188.2 248.8L191.2 243.4L190.1 236.1L191.4 232.8L196.5 231.6L200.4 228.4L200.8 225.8L202.0 226.1L204.4 221.4L206.8 225.5ZM462.7 226.1L463.7 228.2L465.4 227.2L467.7 229.4L470.4 240.3L477.2 244.2L479.4 249.6L482.3 249.7L482.8 252.6L488.9 259.8L490.1 265.4L488.2 275.0L481.2 286.0L480.3 290.8L475.7 291.9L470.2 295.3L466.3 293.6L466.7 292.1L462.8 294.6L454.7 292.5L451.8 287.3L447.8 285.9L448.0 282.5L446.7 284.4L444.3 284.9L447.2 280.5L447.0 278.5L442.0 283.9L439.8 282.8L437.3 277.7L429.2 274.6L415.0 276.6L409.8 278.6L408.2 281.2L397.9 281.4L392.8 284.4L389.0 284.3L384.6 282.0L384.7 280.4L386.5 279.4L386.4 274.9L380.0 259.9L381.2 261.1L380.3 258.5L382.4 260.4L380.1 255.2L382.2 248.0L382.4 250.0L389.2 245.1L400.6 242.3L404.3 238.2L406.5 233.3L407.6 235.7L408.8 235.1L407.8 233.8L408.7 232.5L409.9 233.1L410.2 231.0L413.8 227.4L417.5 226.2L421.1 229.1L424.5 229.4L424.0 227.9L427.3 222.7L432.6 221.6L432.6 220.2L430.6 219.3L432.0 218.9L440.1 221.9L443.3 220.9L444.6 222.2L441.9 224.9L440.6 229.5L453.5 236.9L455.3 236.0L457.6 229.6L457.1 225.9L458.8 218.6L459.8 217.6L460.6 219.0L462.7 226.1ZM400.2 216.4L395.4 214.6L397.9 214.0L400.2 216.4ZM410.4 216.2L407.7 216.4L409.1 213.8L412.1 212.1L418.3 211.4L410.4 216.2ZM392.5 210.6L395.8 212.2L389.3 213.1L392.5 210.6ZM406.2 210.6L405.8 212.1L398.0 212.5L400.2 211.0L401.9 211.8L406.2 210.6ZM367.1 207.0L372.3 207.2L372.9 206.1L386.5 211.3L383.3 212.4L366.1 209.7L358.2 207.2L360.0 204.6L363.4 204.7L367.1 207.0ZM438.5 205.4L437.1 207.3L437.9 203.3L438.5 205.4ZM485.7 203.4L481.0 205.7L475.7 204.2L479.9 203.5L480.7 202.1L481.0 203.6L482.5 203.4L484.8 201.4L484.5 199.8L486.7 200.2L485.7 203.4ZM418.1 197.9L417.0 198.8L414.6 197.1L418.1 197.9ZM426.9 196.9L427.9 199.0L419.8 197.7L420.5 196.2L426.9 196.9ZM488.9 200.7L488.1 201.5L486.9 198.8L482.1 195.9L486.4 197.3L488.9 200.7ZM436.9 191.6L437.7 196.0L440.5 197.6L442.8 194.7L448.4 193.1L465.5 199.0L469.3 203.4L473.9 205.1L474.5 206.5L472.0 206.8L472.6 208.6L482.2 217.4L474.6 216.1L469.5 210.5L465.9 209.3L461.9 211.0L462.3 213.0L460.1 213.9L455.8 213.4L450.6 210.6L446.4 211.4L449.3 208.5L447.3 203.2L435.6 198.1L433.7 199.7L431.0 196.1L435.7 194.5L431.7 194.5L427.0 191.0L432.1 189.4L436.9 191.6ZM412.6 184.5L408.3 187.8L398.7 187.8L398.3 189.8L400.8 192.3L407.4 190.1L407.1 191.4L402.3 193.6L406.9 203.0L405.4 203.8L404.3 202.9L405.7 200.6L402.3 200.9L400.7 198.3L400.9 195.6L399.0 196.4L399.4 203.6L396.5 203.1L396.8 198.0L394.8 196.1L398.3 186.9L400.6 184.8L406.2 186.0L412.6 184.5ZM422.0 185.3L421.8 187.7L420.4 187.4L420.4 190.9L418.5 185.7L419.0 183.5L419.9 182.5L422.0 185.3ZM359.4 204.4L356.4 204.5L350.5 200.0L341.5 187.9L339.6 183.4L330.6 173.4L336.6 174.1L345.2 182.7L348.0 182.7L354.0 188.1L352.9 190.4L355.4 191.4L356.9 194.8L360.2 196.8L359.4 204.4ZM392.4 183.4L395.5 186.0L392.2 186.3L391.4 190.6L388.8 192.5L387.7 199.4L387.3 198.4L384.2 199.7L379.8 197.0L376.5 197.9L375.5 196.6L371.5 196.5L371.0 192.8L368.4 189.7L368.3 184.7L369.9 182.9L374.0 183.4L374.6 181.0L379.0 179.9L389.2 169.5L396.0 173.6L390.9 179.6L392.9 182.2L392.4 183.4ZM415.7 165.4L416.1 168.7L415.2 171.2L414.2 168.5L412.9 169.8L413.0 173.1L409.8 171.6L409.8 168.3L408.1 167.0L403.9 169.5L403.5 168.7L404.5 166.4L407.8 164.6L408.7 165.9L413.2 163.8L413.0 161.7L415.2 163.0L415.7 165.4ZM292.1 171.5L289.7 172.1L288.4 169.9L289.1 161.5L293.6 167.8L292.1 171.5ZM409.1 160.3L406.4 163.7L404.7 161.8L406.3 158.6L407.8 158.5L407.3 160.3L409.4 157.7L409.1 160.3ZM394.1 162.9L390.5 165.5L396.9 157.3L397.4 159.5L394.1 162.9ZM403.4 155.9L406.8 156.7L403.7 159.8L403.4 155.9ZM413.3 155.1L414.0 158.2L411.9 157.5L412.7 160.1L411.4 160.7L410.0 157.0L411.6 157.2L411.6 156.1L409.9 154.1L413.3 155.1ZM402.4 152.7L401.7 155.0L399.1 151.6L402.4 152.7ZM401.8 137.8L404.4 137.8L405.1 141.6L402.8 144.8L402.9 149.2L409.0 150.7L409.4 154.1L406.2 151.3L405.5 152.3L403.8 150.7L399.9 150.5L400.9 148.7L398.4 147.4L397.9 143.6L399.0 144.5L400.2 137.8L401.8 137.8ZM371.8 137.3L369.4 138.6L367.2 137.8L367.1 135.4L373.0 133.5L373.6 134.5L371.8 137.3ZM401.4 126.0L400.3 128.3L398.5 124.0L402.3 119.2L403.6 120.0L401.4 126.0ZM438.3 95.0L437.1 97.6L436.0 96.7L433.8 98.9L432.0 98.1L433.6 95.2L438.3 95.0ZM164.4 90.8L160.1 93.8L158.1 92.3L164.4 90.8ZM134.7 90.7L141.7 91.8L137.5 92.9L134.1 91.9L134.7 90.7ZM112.3 83.8L111.1 88.2L103.8 85.5L104.2 84.1L112.3 83.8ZM95.0 75.6L96.6 77.6L96.3 81.2L93.9 81.9L92.1 76.3L95.0 75.6ZM455.6 86.8L453.6 92.3L445.3 93.7L441.4 96.8L439.6 95.8L439.5 93.7L428.3 95.7L431.1 97.7L429.2 102.3L427.5 103.5L426.1 102.4L426.8 100.0L424.0 97.3L432.7 91.4L441.1 91.2L444.0 86.3L445.8 87.6L451.4 83.8L453.8 75.7L456.7 75.2L458.2 79.0L458.1 81.2L455.6 83.9L455.6 86.8ZM96.0 73.1L95.0 75.2L93.2 72.8L95.5 70.7L96.0 73.1ZM463.6 67.5L467.5 66.9L468.1 70.0L464.1 70.8L461.7 73.5L457.4 71.6L455.9 74.6L452.8 74.7L452.4 71.9L453.8 69.8L456.7 69.7L458.3 63.8L463.6 67.5ZM462.9 49.5L465.7 54.4L461.6 53.5L460.0 57.4L462.6 60.2L462.5 62.1L460.5 60.5L458.7 62.6L458.9 49.0L457.3 46.3L457.6 42.5L460.1 41.3L459.0 40.0L460.2 39.6L462.9 49.5ZM51.2 45.4L46.4 47.0L42.5 46.6L44.7 43.7L43.3 41.0L51.4 37.4L54.3 39.1L51.2 45.4ZM104.5 36.2L102.9 38.4L99.6 35.8L103.6 34.9L104.5 36.2ZM61.6 27.9L58.6 30.9L64.4 30.5L61.3 35.2L64.1 35.4L71.1 43.6L74.4 44.1L72.7 46.6L73.8 48.0L71.3 49.5L61.7 49.7L55.4 51.7L54.0 51.1L60.4 47.7L55.4 46.1L58.2 45.3L56.7 43.8L57.3 42.0L61.3 42.3L61.7 40.7L56.5 38.5L56.0 35.7L54.5 37.0L53.0 33.0L56.1 28.0L61.6 27.9ZM30.1 6.5L29.4 8.3L32.5 10.2L29.0 12.3L18.7 14.6L7.5 13.4L10.2 12.2L4.2 10.8L9.0 9.5L3.2 8.9L5.1 7.1L9.2 6.7L13.5 8.5L17.6 7.0L21.1 7.8L30.1 6.5ZM362.6 -22.2L363.3 -20.9L373.8 -21.5L382.2 -19.2L381.5 -17.7L369.2 -14.6L379.1 -14.0L380.5 -12.3L386.1 -13.4L407.0 -11.3L407.1 -13.4L417.3 -12.9L421.7 -11.5L423.0 -9.7L421.4 -8.6L429.1 -5.3L431.7 -8.2L436.1 -7.0L452.6 -7.2L450.6 -9.8L454.2 -11.0L478.9 -9.2L488.4 -5.5L504.9 -5.5L507.2 -4.4L506.9 -2.4L510.3 -1.6L529.1 -2.0L533.9 0.4L537.3 -0.5L535.1 -2.2L536.3 -3.4L558.6 -1.5L562.4 -0.3L562.4 10.6L555.3 11.6L561.0 17.2L545.1 19.7L536.0 24.5L532.0 22.6L524.9 24.8L523.7 23.8L517.4 24.6L513.2 29.0L513.3 30.1L516.4 30.7L516.1 34.7L513.5 34.8L512.3 37.1L513.5 38.3L508.7 39.7L507.7 42.8L503.7 43.5L502.8 46.3L498.9 48.8L495.2 36.9L496.5 33.1L499.0 30.1L503.2 29.5L517.7 21.1L519.9 17.2L516.6 17.5L515.0 19.7L508.0 22.7L505.8 19.4L498.7 20.3L491.9 24.9L494.1 26.6L483.8 27.5L484.0 25.6L479.7 25.2L476.3 26.5L459.0 26.8L439.6 38.6L443.9 39.0L447.9 41.3L449.7 39.9L452.7 40.1L456.6 43.1L456.7 45.5L454.6 48.2L453.1 55.8L448.1 61.7L438.9 69.6L435.3 71.3L431.8 70.0L425.5 73.6L424.8 76.5L418.8 79.6L418.4 81.1L421.1 82.7L424.1 87.7L423.1 92.4L416.0 94.3L415.0 87.9L417.0 87.4L415.1 85.1L411.1 84.1L412.8 80.2L409.9 79.1L401.1 82.0L404.1 77.8L402.7 76.4L395.5 81.0L392.9 81.1L391.5 82.4L395.2 85.9L397.4 86.7L400.5 84.8L404.7 85.9L405.1 87.3L401.2 88.1L395.9 92.9L398.8 94.4L403.4 101.7L403.4 103.7L401.7 104.5L403.9 106.8L402.8 111.2L401.3 111.4L394.5 121.2L387.0 126.1L373.0 129.9L372.1 132.8L370.5 132.9L370.5 129.9L366.8 129.0L359.6 134.4L359.0 136.3L367.8 146.6L369.0 151.7L368.7 156.5L357.6 164.9L356.6 163.1L357.4 161.3L353.0 159.3L350.5 155.1L345.8 153.9L346.2 151.7L343.7 151.7L341.3 163.1L343.1 163.2L344.7 168.1L351.6 173.3L355.0 184.9L353.1 185.1L347.3 180.9L343.7 170.7L339.4 165.5L338.9 167.1L340.1 157.1L335.7 142.1L330.8 145.4L327.6 144.5L327.9 138.6L326.1 134.4L322.6 131.8L320.0 126.1L317.5 126.0L316.9 128.7L313.5 128.1L307.8 129.6L306.5 133.3L302.6 135.1L294.7 141.8L294.7 143.1L289.6 144.9L288.3 160.1L286.9 160.2L285.7 162.3L286.5 163.2L284.0 164.0L282.0 166.6L279.4 164.1L271.0 144.7L268.6 130.0L262.7 131.3L259.1 128.0L260.4 127.0L259.6 125.9L254.4 122.9L251.4 118.8L238.1 119.8L226.9 118.0L224.4 114.1L219.5 115.9L210.8 112.2L206.9 105.9L201.1 106.4L203.4 112.6L207.0 115.4L208.8 120.7L209.4 117.2L211.0 117.8L210.4 121.0L211.5 122.7L217.6 122.4L224.0 116.2L225.4 122.1L230.5 123.9L233.5 127.4L229.9 132.5L228.1 133.0L227.7 136.6L221.1 140.2L221.1 141.3L213.2 143.6L212.6 145.7L203.0 150.1L194.7 152.0L192.9 153.7L188.8 153.8L186.4 146.8L186.5 142.5L176.9 130.1L175.1 123.6L172.4 122.0L165.9 111.6L164.6 111.6L165.4 107.7L162.6 112.8L158.5 106.7L167.5 122.9L167.0 125.2L170.7 128.2L172.4 137.5L174.9 139.2L177.3 144.8L188.3 154.5L186.7 156.3L191.9 159.8L209.7 155.5L209.5 159.3L205.1 169.8L200.4 176.9L180.0 195.5L177.1 201.2L176.0 206.1L177.7 207.1L177.0 211.6L180.6 217.9L181.4 228.6L177.8 234.2L172.2 236.6L165.0 242.6L167.2 253.3L165.7 255.4L158.9 258.8L159.9 260.2L157.9 267.1L147.0 278.1L140.3 281.3L131.6 281.1L123.5 283.7L120.1 281.8L118.8 277.7L119.7 275.1L111.4 262.6L108.8 248.9L102.1 237.9L102.0 231.6L104.0 225.5L107.1 221.4L107.2 217.8L102.4 202.2L93.9 191.5L96.6 180.0L95.5 178.2L93.1 175.4L85.9 176.8L81.6 171.3L74.9 171.6L64.4 175.5L57.1 174.3L49.2 176.5L45.1 175.2L35.8 168.5L29.2 158.7L24.3 155.1L24.0 151.2L21.6 148.1L24.7 144.3L25.6 138.9L23.3 128.5L30.3 116.6L35.3 111.7L37.8 111.4L43.6 106.5L42.9 103.1L44.3 99.3L50.9 95.1L53.6 90.6L63.9 92.2L73.8 88.2L95.8 86.2L97.7 86.5L97.7 87.9L100.2 87.4L98.8 88.8L99.7 90.7L97.6 94.5L98.1 96.0L111.5 100.1L112.8 102.5L122.0 105.6L124.7 103.6L124.9 100.2L128.7 98.5L148.9 103.9L154.6 102.1L157.3 103.8L157.9 102.9L162.2 103.7L164.4 102.1L168.3 93.6L167.7 89.1L168.8 88.1L164.8 87.7L162.9 89.3L158.8 89.6L156.5 88.1L151.1 89.5L145.4 88.1L141.8 83.9L143.1 81.7L141.4 80.4L144.5 77.8L148.7 77.7L149.8 75.6L155.0 76.0L161.5 73.4L166.0 73.4L174.7 76.4L180.3 76.2L183.9 73.6L183.2 71.7L170.2 64.6L174.4 61.9L172.9 60.8L176.9 59.1L165.5 61.8L165.6 63.5L169.8 64.0L169.2 65.0L162.5 67.0L161.0 66.5L161.6 65.2L158.6 64.4L161.7 62.9L160.9 62.3L153.9 60.9L150.9 65.2L148.7 65.5L145.5 71.9L148.6 76.1L145.4 76.2L141.9 78.5L141.1 76.7L138.0 76.4L134.7 77.1L136.6 78.6L135.2 79.1L131.7 78.2L135.6 85.4L133.1 84.6L133.9 86.0L132.1 86.3L133.2 88.7L131.3 88.8L129.1 87.6L127.6 83.6L122.9 78.3L123.3 74.2L113.6 69.3L110.6 65.1L108.8 64.6L108.0 65.8L107.9 63.6L105.8 63.2L103.5 64.2L104.2 67.7L111.2 73.6L113.4 73.6L113.3 74.7L120.4 78.5L119.9 79.5L116.0 77.7L114.8 79.5L116.8 80.5L116.5 81.9L113.9 84.5L112.7 84.7L113.9 81.8L112.0 78.8L102.9 74.3L98.6 70.9L97.7 68.2L94.1 67.0L87.7 70.4L78.3 70.5L78.1 73.8L72.0 76.2L69.0 80.8L70.1 82.4L63.9 88.0L57.8 88.0L55.1 90.0L51.9 87.3L45.4 87.5L45.6 83.7L43.7 82.4L45.8 76.9L44.1 70.7L48.0 68.7L64.6 69.6L66.0 67.9L66.5 62.5L61.7 58.2L57.5 57.2L57.2 55.2L65.4 55.3L64.5 52.2L67.1 53.4L73.5 51.2L74.3 49.0L80.3 47.1L82.7 43.1L92.0 41.9L93.9 40.6L92.0 36.5L93.2 32.1L98.7 30.4L97.8 32.7L99.7 33.9L96.2 36.6L97.0 39.0L99.7 40.6L104.1 39.3L108.4 41.3L118.0 38.3L123.6 39.5L128.0 37.4L127.5 33.0L128.9 31.3L131.4 30.4L133.6 32.4L135.8 32.4L136.6 28.6L133.9 28.0L133.7 26.4L146.4 25.6L149.5 24.1L146.6 22.8L132.4 24.6L128.1 22.2L128.8 19.5L127.4 17.1L128.7 15.5L139.3 10.2L135.2 7.8L130.5 8.5L127.8 10.5L128.3 12.1L118.6 16.7L116.6 20.5L121.2 24.0L118.7 27.1L115.8 27.7L113.3 34.9L109.9 34.6L108.4 36.8L105.2 36.9L98.1 25.7L92.7 28.8L89.1 29.5L85.3 28.1L83.5 18.8L98.6 11.9L110.2 2.8L122.3 -2.7L132.8 -3.7L137.0 -6.0L146.9 -6.4L155.4 -4.4L151.9 -3.7L154.9 -1.9L157.7 -2.9L180.1 2.5L182.2 3.8L182.3 5.6L179.3 7.1L174.8 7.8L160.6 6.1L165.1 8.1L165.4 12.1L171.1 13.7L171.4 12.3L169.7 11.1L171.5 10.1L178.2 11.8L180.5 11.2L178.6 9.2L185.0 6.5L190.1 7.6L191.7 5.7L189.4 4.1L190.7 2.5L188.7 0.8L196.4 1.6L197.9 3.2L194.5 3.5L194.5 5.0L196.6 6.0L216.8 -0.0L218.9 0.1L216.2 1.8L230.7 -0.1L233.8 1.6L236.9 -0.3L234.1 -1.8L235.5 -2.7L243.6 -1.9L257.3 2.1L259.1 0.6L256.3 -1.4L253.0 -1.7L253.9 -3.0L252.3 -6.0L257.4 -8.5L259.2 -10.9L268.5 -10.8L269.0 -9.2L266.4 -7.0L269.0 -4.2L268.4 -0.5L271.4 1.2L264.9 6.9L268.0 7.3L275.2 3.0L273.6 1.4L274.9 -0.4L271.9 -0.6L271.2 -2.1L273.4 -4.9L269.9 -7.1L274.8 -9.0L274.1 -10.9L276.9 -9.5L275.8 -6.8L278.8 -6.3L277.5 -8.3L282.1 -9.4L287.8 -9.5L292.8 -7.9L290.4 -10.2L290.1 -13.1L307.4 -13.9L305.2 -15.4L308.4 -17.2L325.0 -19.7L345.6 -20.8L348.9 -23.1L355.4 -24.2L360.1 -23.3L356.4 -22.7L362.6 -22.2ZM204.2 75.4L207.7 78.2L205.5 78.5L203.5 82.2L204.4 85.6L208.9 87.5L217.1 87.3L217.3 81.8L215.1 80.9L215.8 79.0L214.0 78.9L214.6 76.5L219.6 76.3L216.8 73.1L214.6 73.8L214.3 75.8L213.5 71.3L210.3 70.4L207.5 66.3L210.1 66.6L210.2 64.6L215.0 64.6L215.0 60.2L209.9 59.7L204.2 61.4L197.6 66.3L204.2 75.4ZM-4.4 -40.2L12.7 -38.0L-16.1 -36.1L7.1 -36.3L9.4 -35.3L6.4 -33.7L26.6 -35.8L34.8 -35.2L36.4 -34.1L14.9 -31.0L21.3 -30.9L15.9 -27.1L15.9 -24.1L19.2 -22.3L10.5 -21.3L15.5 -19.8L16.2 -17.5L13.2 -17.3L16.8 -14.9L10.7 -14.7L13.9 -13.6L13.0 -12.6L5.3 -12.2L8.7 -10.4L8.8 -9.1L1.9 -9.5L9.2 -7.2L10.3 -5.0L5.4 -4.4L-0.1 -7.1L0.8 -5.2L-2.4 -3.8L8.6 -3.5L-6.2 1.0L-17.2 2.0L-23.8 5.9L-39.2 9.3L-41.5 11.0L-42.9 14.7L-47.4 16.9L-46.3 19.0L-48.9 23.9L-62.3 21.9L-71.5 14.3L-73.3 10.0L-77.1 7.5L-76.1 5.5L-77.9 4.5L-75.2 1.3L-71.1 0.3L-69.4 -3.0L-76.5 -1.2L-79.9 -2.1L-79.0 -5.4L-70.9 -4.7L-78.0 -7.4L-83.0 -7.7L-80.0 -10.2L-87.1 -16.0L-90.6 -17.1L-90.5 -18.3L-97.9 -19.9L-117.7 -19.7L-125.6 -22.3L-112.9 -23.3L-130.8 -25.2L-130.4 -26.2L-110.1 -28.9L-109.0 -29.9L-116.4 -30.8L-100.5 -34.1L-101.7 -35.4L-86.8 -36.5L-75.4 -35.7L-68.1 -37.2L-52.1 -35.1L-58.6 -36.5L-58.2 -37.7L-49.0 -39.4L-4.4 -40.2Z"/>
+            <path d="M106.5 44.7 Q225.65 15.75 344.8 150.8" fill="none" stroke="url(#rg)" stroke-width="1.8"
+                  stroke-dasharray="5 6" stroke-linecap="round" opacity=".95"/>
+            <circle cx="106.5" cy="44.7" r="4.6" fill="#D8BE7A"/>
+            <circle cx="106.5" cy="44.7" r="12" fill="none" stroke="#D8BE7A" stroke-width=".8" opacity=".4"/>
+            <circle cx="344.8" cy="150.8" r="4.6" fill="#2BA79F"/>
+            <circle cx="344.8" cy="150.8" r="12" fill="none" stroke="#2BA79F" stroke-width=".8" opacity=".4"/>
+            <circle cx="225.7" cy="56.8" r="2.6" fill="#EDF4F2"/>
+            <text class="place" x="106.5" y="70.7" text-anchor="middle">Berlin</text>
+            <text class="place" x="344.8" y="176.8" text-anchor="middle">Bangkok</text>
+          </svg>
+        </div>
+        <p style="color:var(--muted); font-size:15px; line-height:1.7; margin:6px 0 0">
+          You study in Thailand, in a region investing heavily in cloud services, data centres,
+          artificial intelligence and cybersecurity. You keep a route back into the German market —
+          through an internship, a Master's, or the network you build while you are here.
+        </p>
+      </div>
+      <div>
+        <p class="mono" style="color:var(--gold); margin:0 0 6px">Internship-abroad destinations advertised</p>
+        <div class="dest-list">
+          <div class="dest hl"><span>Germany</span><span>2025 · 2026</span></div>
+          <div class="dest"><span>Japan</span><span>2025 · 2026</span></div>
+          <div class="dest"><span>Taiwan</span><span>2026</span></div>
+          <div class="dest"><span>South Korea</span><span>2026</span></div>
+          <div class="dest"><span>Malaysia</span><span>2026</span></div>
+          <div class="dest"><span>Australia</span><span>2026</span></div>
+          <div class="dest"><span>China</span><span>2026</span></div>
+        </div>
+        <p style="color:var(--dim); font-size:12.5px; margin-top:16px; line-height:1.6">
+          Placements are competitive and depend on each round. We are not promising you one — we are
+          telling you the route exists and is advertised every year.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================================================================== faq -->
+<section class="block" id="questions">
+  <div class="wrap">
+    <div class="section-head rv" style="text-align:center; margin:0 auto">
+      <p class="eyebrow mono" style="justify-content:center">04 — Straight answers</p>
+      <h2>Questions German students<br>actually <em>ask us.</em></h2>
+    </div>
+
+    <div class="faq" id="faq">
+      <div class="q">
+        <button aria-expanded="false"><h3>What does it cost?</h3><span class="plus" aria-hidden="true"></span></button>
+        <div class="a"><div>
+          For international students the tuition is <b>90,000 THB per semester</b> — 180,000 THB per academic
+          year, and 720,000 THB across the eight semesters of the degree. A summer session, if one is needed,
+          is 25,000 THB. Fees are set in Thai baht, so check the current exchange rate and confirm the figure
+          on the official fee page before you budget. Accommodation and living costs are separate.
+        </div></div>
+      </div>
+
+      <div class="q">
+        <button aria-expanded="false"><h3>Do I need to speak Thai?</h3><span class="plus" aria-hidden="true"></span></button>
+        <div class="a"><div>
+          No. The B.Sc. in ICT is an <b>international programme taught in English</b>, and admissions is open to
+          Thai and international students who are proficient in English. Thai is useful for daily life and for
+          internships in Thailand, but it is not the language of instruction.
+        </div></div>
+      </div>
+
+      <div class="q">
+        <button aria-expanded="false"><h3>Will the degree be recognised in Germany?</h3><span class="plus" aria-hidden="true"></span></button>
+        <div class="a"><div>
+          That is a question for the German authorities, not for us — and <b>we will not claim automatic
+          recognition</b>. Ask Admissions directly, and check with the relevant recognition body for your
+          situation before you commit. We would rather you verified it than hoped.
+        </div></div>
+      </div>
+
+      <div class="q">
+        <button aria-expanded="false"><h3>What English level do I need?</h3><span class="plus" aria-hidden="true"></span></button>
+        <div class="a"><div>
+          Admissions requires proficiency in English. For graduation, the programme's benchmark is
+          <b>IELTS 5.5 / TOEFL iBT 70</b> (or the ICT exit exam). Entry requirements for your specific
+          qualification are set each round — confirm yours with Admissions.
+        </div></div>
+      </div>
+
+      <div class="q">
+        <button aria-expanded="false"><h3>When can I apply, and where is the campus?</h3><span class="plus" aria-hidden="true"></span></button>
+        <div class="a"><div>
+          <b>International Direct Admissions runs from 1 September 2026 to 15 May 2027.</b> The campus is the
+          ICT Building on Mahidol University's Salaya campus: 999 Phutthamonthon Sai 4 Road, Salaya,
+          Nakhon Pathom 73170, Thailand.
+        </div></div>
+      </div>
+
+      <div class="q">
+        <button aria-expanded="false"><h3>What is the difference between the eight tracks?</h3><span class="plus" aria-hidden="true"></span></button>
+        <div class="a"><div>
+          Four are core tracks (Computer Science, Database &amp; Intelligent Systems, Computer Networks,
+          Software Engineering) and four are applied (Electronic Business Systems, Multimedia Systems,
+          Management Information Systems, Health Information Technology). Each has its own published
+          description — <a href="#tracks">read them above</a> before you choose.
+        </div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================================================================== cta -->
+<section class="final" id="apply">
+  <div class="wrap">
+    <p class="eyebrow mono rv" style="justify-content:center">05 — Next step</p>
+    <h2 class="rv d1">Start with <em>one question.</em></h2>
+    <p class="lede rv d2" style="text-align:center">Send one question about the curriculum, the tracks or the
+      application. No form, no commitment — a person answers, and then you decide whether the next step is
+      worth taking.</p>
+    <div class="hero-actions rv d3">
+      <a class="btn btn-primary" href="mailto:ict@mahidol.ac.th?subject=B.Sc.%20in%20ICT%20%E2%80%94%20question%20from%20Germany">
+        Email admissions <span class="arw">↗</span></a>
+      <a class="btn btn-ghost" href="https://www.ict.mahidol.ac.th/en/programs/ict/"
+         target="_blank" rel="noopener">See application rounds</a>
+    </div>
+    <p class="mailbox rv d4">or write to <a href="mailto:ict@mahidol.ac.th">ict@mahidol.ac.th</a>
+      &nbsp;·&nbsp; +66 (0)2 441-0909 &nbsp;·&nbsp; applications close <b style="color:var(--gold); font-weight:500">15 May 2027</b></p>
+  </div>
+</section>
+</main>
+
+<!-- ================================================================== footer -->
+<footer>
+  <div class="wrap">
+    <div class="foot-top">
+      <div>
+        <div class="foot-logo"><img src="assets/logo.png" alt="Mahidol University — Faculty of Information and Communication Technology"></div>
+        <p style="margin:18px 0 0; max-width:280px; line-height:1.7">
+          Bachelor of Science in Information and Communication Technology<br>
+          Faculty of ICT, Mahidol University, Salaya, Thailand.
+        </p>
+      </div>
+      <div class="foot-src">
+        <b>Sources —</b> Faculty of ICT Information Pack; ict.mahidol.ac.th B.Sc. in ICT programme page
+        (language of instruction, four-year structure, 129-credit breakdown, major tracks, learning
+        approach, course codes, international application schedule, tuition schedule AY2023 onwards);
+        ict.mahidol.ac.th Internship / Exchange abroad (Germany rounds 2025 and 2026); QS World University
+        Rankings 2027. All figures checked November 2026.
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>Student campaign prototype · ITLG311 Business Communication</span>
+      <span>Not an official Mahidol University publication</span>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/earth.js"></script>
+<script src="assets/three.min.js"></script>
+<script src="main.js"></script>
+</body>
+</html>
